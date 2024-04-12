@@ -3,12 +3,8 @@ program proyecto7;
 {$APPTYPE CONSOLE}
 
   var
-    num1: Integer;
-    num2: Integer;
-    num3: Integer;
-    num4: Integer;
-    suma: Integer;
-    promedio: Integer;
+    num1, num2, num3, num4, suma: Integer;
+    promedio: Double;
 
   begin
     Write('Ingrese su primer numero: ');
@@ -23,11 +19,8 @@ program proyecto7;
     suma := num1 + num2 + num3 + num4;
     promedio := suma div 4;
 
-    Write('La suma de todos los numeros es: ');
-    WriteLn(suma);
-
-    Write('El promedio de los numeros es: ');
-    WriteLn(promedio);
+    Write('La suma de todos los numeros es: ', suma);
+    Write('El promedio de los numeros es: ', promedio:0:2);
 
     ReadLn;
   end.
