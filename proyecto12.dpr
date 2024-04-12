@@ -16,10 +16,7 @@ begin
   suma := nota1 + nota2 + nota3;
   promedio := suma / 3;
 
-  WriteLn(suma);
-  writeLn(promedio);
-
-  if promedio > 7 then Write('Promocionado!')
+  if promedio >= 7 then Write('Promocionado!')
   else Write('No promocionado');
 
   ReadLn;
