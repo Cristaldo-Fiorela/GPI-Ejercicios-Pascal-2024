@@ -9,7 +9,7 @@ program proyecto20;
 begin
   contador := 0;
 
-  WriteLn('Ingrese su numero');
+  WriteLn('Ingrese sus numeros');
   while contador < 10 do
     begin
       ReadLn(numero);
