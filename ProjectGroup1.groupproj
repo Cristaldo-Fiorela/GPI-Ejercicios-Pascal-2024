@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E628CF10-C5A8-4BA0-AF81-23739C8FB52D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="final1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\Embarcadero\Studio\Projects\ejemplo2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\Embarcadero\Studio\Projects\ejemplo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="final1">
+        <MSBuild Projects="final1.dproj"/>
+    </Target>
+    <Target Name="final1:Clean">
+        <MSBuild Projects="final1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="final1:Make">
+        <MSBuild Projects="final1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ejemplo2">
+        <MSBuild Projects="..\..\..\Embarcadero\Studio\Projects\ejemplo2.dproj"/>
+    </Target>
+    <Target Name="ejemplo2:Clean">
+        <MSBuild Projects="..\..\..\Embarcadero\Studio\Projects\ejemplo2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ejemplo2:Make">
+        <MSBuild Projects="..\..\..\Embarcadero\Studio\Projects\ejemplo2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ejemplo">
+        <MSBuild Projects="..\..\..\Embarcadero\Studio\Projects\ejemplo.dproj"/>
+    </Target>
+    <Target Name="ejemplo:Clean">
+        <MSBuild Projects="..\..\..\Embarcadero\Studio\Projects\ejemplo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ejemplo:Make">
+        <MSBuild Projects="..\..\..\Embarcadero\Studio\Projects\ejemplo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="final1;ejemplo2;ejemplo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="final1:Clean;ejemplo2:Clean;ejemplo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="final1:Make;ejemplo2:Make;ejemplo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
