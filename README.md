@@ -8,13 +8,13 @@
 📅 **Ciclo lectivo**: 1er Cuatrimestre del 2024  
 🎓 **Carrera**: Técnico Superior en Gestión en Programación e Innovación Tecnológica y Digital
 
-Este repositorio incluye diversos ejercicios que exploran desde los conceptos básicos de programación hasta problemas más complejos resueltos con Pascal. ¡Es un viaje emocionante hacia el mundo de la programación! 🚀
+Este repositorio incluye diversos ejercicios que exploran desde los conceptos básicos de programación hasta problemas más complejos resueltos con Pascal. 🚀
 
 ---
 
-⚠️ **Nota**: Los ejercicios aquí reflejan mi progreso a lo largo del curso y pueden tener áreas de mejora. ¡Estoy abierto a sugerencias y comentarios! 🤓
+⚠️ **Nota**: Los ejercicios aquí reflejan mi progreso a lo largo del curso y pueden tener áreas de mejora. ¡Estoy abierta a sugerencias y comentarios! 🤓
 
 ---
 
-¡Espero que disfruten navegando por este repositorio! 😄  
-¡A programar se ha dicho! 👨‍💻👩‍💻
+¡Espero que les sirva y les guste! 😄  
+¡Happy coding! 💻✨
